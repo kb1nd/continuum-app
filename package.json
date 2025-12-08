@@ -1,0 +1,19 @@
+{
+  "name": "continuum",
+  "version": "1.0.0",
+  "description": "inceptum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kb1nd/continuum-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kb1nd/continuum-app/issues"
+  },
+  "homepage": "https://github.com/kb1nd/continuum-app#readme"
+}
