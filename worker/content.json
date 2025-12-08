@@ -1,0 +1,9 @@
+{
+  blog: [
+    {
+      title: "Brødhue",
+      text: "abc",
+      image: ""
+    }
+  ]
+}
