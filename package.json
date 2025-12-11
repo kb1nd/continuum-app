@@ -2,11 +2,11 @@
   "name": "continuum-backend",
   "version": "1.0.0",
   "description": "Lisensbehandler for continuum-app",
-  "main": "worker/app.js",
+  "main": "worker/main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node worker/app.js"
+    "start": "node worker/main.js"
   },
   "repository": {
     "type": "git",
