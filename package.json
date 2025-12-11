@@ -1,7 +1,7 @@
 {
-  "name": "license-handler",
+  "name": "continuum-backend",
   "version": "1.0.0",
-  "description": "License handler for continuum-app",
+  "description": "Lisensbehandler for continuum-app",
   "main": "worker/app.js",
   "type": "module",
   "scripts": {
