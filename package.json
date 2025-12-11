@@ -1,21 +1,11 @@
 {
   "name": "continuum-backend",
   "version": "1.0.0",
-  "description": "Lisensbehandler for continuum-app",
-  "main": "worker/main.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node worker/main.js"
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kb1nd/continuum-app.git"
-  },
-  "author": "Continuum EB 2025",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kb1nd/continuum-app/issues"
-  },
-  "homepage": "https://github.com/kb1nd/continuum-app#readme"
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
 }
