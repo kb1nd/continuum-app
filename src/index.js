@@ -17,14 +17,12 @@ export default {
     // behandle all inndata
     server.onmessage = (event) => {
       let response = { status: 403, message: "License not valid" };
-      const licenses = env.LICENSES.split(",");
+      //const licenses = env.LICENSES.split(",");
 
       // sjekk om lisensen er gyldig
       try {
-        if (licenses.includes(event.data)) {
-          response = { status: 200, data: content };
-        }
-
+        //if (licenses.includes(event.data)) response = { status: 200, data: content };
+        response = { status: 200, data: env.LICENSES };
         // send respons
         server.send(JSON.stringify(response));
       } catch (err) {
