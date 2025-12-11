@@ -19,13 +19,17 @@ export default {
       let response = { status: 403, message: "License not valid" };
 
       // sjekk om lisensen er gyldig
-      if (env.LICENSES.split(",").includes(event.data)) {
-        response = { status: 200, data: content };
-      }
+      try {
+        if (env.LICENSES.split(",").includes(event.data)) {
+          response = { status: 200, data: content };
+        }
 
-      // send respons
-      server.send(JSON.stringify(response));
-    });
+        // send respons
+        server.send(JSON.stringify(response));
+      } catch (err) {
+        server.send(JSON.stringify({ status: 500, error: err.message }))
+      }
+    };
     return new Response(null, { status: 101, webSocket: client });
   }
 };
