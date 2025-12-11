@@ -1,5 +1,6 @@
 // importer bloggdata
 import content from "./bloggdata.js";
+let x = "snegle122,lisensabx"
 export default {
   async fetch(request, env, ctx) {
     // bare behandle websocket oppgradering
@@ -17,12 +18,12 @@ export default {
     // behandle all inndata
     server.onmessage = (event) => {
       let response = { status: 403, message: "License not valid" };
-      //const licenses = env.LICENSES.split(",");
+      const licenses = x.split(",");
 
       // sjekk om lisensen er gyldig
       try {
-        //if (licenses.includes(event.data)) response = { status: 200, data: content };
-        response = { status: 200, data: env.LICENSES };
+        if (licenses.includes(event.data)) response = { status: 200, data: content };
+
         // send respons
         server.send(JSON.stringify(response));
       } catch (err) {
