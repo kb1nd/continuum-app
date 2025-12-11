@@ -1,8 +1,9 @@
 {
-  "name": "continuum",
+  "name": "license-handler",
   "version": "1.0.0",
-  "description": "inceptum",
+  "description": "License handler for continuum-app",
   "main": "worker/app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node worker/app.js"
@@ -11,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/kb1nd/continuum-app.git"
   },
-  "author": "",
+  "author": "Continuum EB 2025",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kb1nd/continuum-app/issues"
