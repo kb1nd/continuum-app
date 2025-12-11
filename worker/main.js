@@ -1,5 +1,5 @@
 // importer bloggdata
-import content from "./data.js";
+import content from "./bloggdata.js";
 export default {
   async fetch(request, env, ctx) {
     // bare behandle websocket oppgradering
