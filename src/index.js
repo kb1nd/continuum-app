@@ -15,7 +15,7 @@ export default {
     server.accept();
     
     // behandle all inndata
-    server.addEventListener("message", (event) => {
+    server.onmessage = (event) => {
       let response = { status: 403, message: "License not valid" };
 
       // sjekk om lisensen er gyldig
